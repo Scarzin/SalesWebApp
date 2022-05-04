@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using SalesWebApp.Models;
 
 namespace SalesWebApp
 {
@@ -24,6 +26,9 @@ namespace SalesWebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<SalesWebAppContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebAppContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
