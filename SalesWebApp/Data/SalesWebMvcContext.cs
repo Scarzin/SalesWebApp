@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SalesWebApp.Models
 {
-    public class SalesWebAppContext : DbContext
+    public class SalesWebMvcContext : DbContext
     {
-        public SalesWebAppContext (DbContextOptions<SalesWebAppContext> options)
+        public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
             : base(options)
         {
         }
