@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using SalesWebApp.Models;
+using SalesWebMvc.Models;
 
-namespace SalesWebApp
+namespace SalesWebMvc
 {
     public class Startup
     {
